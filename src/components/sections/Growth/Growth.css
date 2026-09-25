@@ -1,0 +1,159 @@
+.subsection-title {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+/* Matrix Table */
+.matrix-section {
+  margin-bottom: 5rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  padding: 0 !important;
+}
+
+.project-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.project-matrix th, 
+.project-matrix td {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-matrix th {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.project-matrix tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.project-matrix tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.fw-600 {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.matrix-badge {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-dot.completed {
+  background-color: var(--success);
+  box-shadow: 0 0 5px var(--success);
+}
+
+.status-dot.ongoing {
+  background-color: var(--warning);
+  box-shadow: 0 0 5px var(--warning);
+}
+
+/* Learnings */
+.learnings-section {
+  margin-bottom: 5rem;
+}
+
+.learnings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.learning-card {
+  border-left: 3px solid var(--accent-color);
+}
+
+.learning-card h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.learning-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Challenges */
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.challenge-card {
+  padding: 1.5rem;
+}
+
+.challenge-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.challenge-icon {
+  font-size: 1.5rem;
+}
+
+.challenge-header h4 {
+  margin: 0;
+  color: var(--warning);
+  font-size: 1.125rem;
+}
+
+.challenge-item {
+  margin-bottom: 1rem;
+}
+
+.challenge-item:last-child {
+  margin-bottom: 0;
+}
+
+.challenge-item strong {
+  display: block;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.challenge-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .project-matrix th, .project-matrix td {
+    padding: 1rem;
+  }
+}

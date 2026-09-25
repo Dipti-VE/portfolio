@@ -1,0 +1,43 @@
+.poc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.poc-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.poc-title {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.poc-desc {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.poc-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-tag {
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.poc-link {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
